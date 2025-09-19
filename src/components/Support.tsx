@@ -4,7 +4,7 @@ const Support = () => (
       <h2 className="text-3xl font-bold text-gray-800 mb-4">Dedicated Support</h2>
       <p className="text-gray-600 mb-8 max-w-2xl mx-auto">Get exclusive access and personalized help from our team.</p>
       <div className="flex justify-center space-x-4">
-        <a href="https://t.me/+sYxmR-zp0YY3ZmU1" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/+uGPNJyrgLhQ0MGFl" target="_blank" rel="noopener noreferrer">
             <button className="px-6 py-3 font-semibold text-white bg-sky-500 rounded-lg hover:bg-sky-600 transition-colors duration-300 shadow-lg">
               Join VIP Group
             </button>

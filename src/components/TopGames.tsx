@@ -29,10 +29,16 @@ const TopGames = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-12">Top Played Games</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {games.map((game) => (
-              <div key={game.name} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+              <a 
+                key={game.name} 
+                href="https://www.goavideo.com/#/register?invitationCode=231867795710"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+              >
                 <IconWrapper>{game.icon}</IconWrapper>
                 <h3 className="text-xl font-semibold text-gray-700">{game.name}</h3>
-              </div>
+              </a>
             ))}
           </div>
         </div>

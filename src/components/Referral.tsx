@@ -10,7 +10,7 @@ const Referral = () => (
                     </div>
                     <div className="flex justify-between items-center text-lg">
                         <span className="font-medium opacity-80">Referral Code:</span>
-                        <span className="font-mono bg-sky-800 text-sky-100 px-3 py-1 rounded">GOA2024WIN</span>
+                        <span className="font-mono bg-sky-800 text-sky-100 px-3 py-1 rounded">231867795710</span>
                     </div>
                 </div>
             </div>
