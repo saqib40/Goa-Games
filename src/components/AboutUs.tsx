@@ -14,37 +14,42 @@ const AboutUs = () => {
     { members: 1000, salary: 100000 },
   ];
 
+  // Reusable component for the contact section to avoid duplicating code
+  const ContactTeacherSection = ({ className = "" }) => (
+    <div className={`mt-8 text-center md:text-left ${className}`}>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        To earn daily salary commission, more rewards, and up to ₹10,000 daily by working as an agent, get in touch with your mentor.
+      </p>
+      <a 
+        href="https://t.me/sonari_rahul" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="inline-block px-8 py-3 font-bold text-white bg-sky-500 rounded-full hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+      >
+        Contact Teacher
+      </a>
+    </div>
+  );
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         
-        {/* Original About Us Content */}
+        {/* Left Column Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Goa Games</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Goa Games is India's premier online gaming platform, offering a diverse range of exciting and fair games. Our mission is to provide a secure, trustworthy, and exhilarating gaming environment for all our players.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
+          <p className="text-gray-600 leading-relaxed">
             With state-of-the-art technology, dedicated customer support, and a vibrant community, we are committed to delivering the best online gaming experience. Join us for non-stop fun and the chance to win big!
           </p>
 
-          {/* Contact Teacher Section - MOVED HERE */}
-          <div className="mt-8">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                  To earn daily salary commission, more rewards, and up to ₹10,000 daily by working as an agent, get in touch with your mentor.
-              </p>
-              <a 
-                href="https://t.me/sonari_rahul" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-3 font-bold text-white bg-sky-500 rounded-full hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                  Contact Teacher
-              </a>
-          </div>
+          {/* Contact section for desktop view */}
+          <ContactTeacherSection className="hidden md:block" />
         </div>
 
-        {/* New Agent Salary Section */}
+        {/* Right Column Content */}
         <div className="md:w-1/2 flex flex-col items-center gap-8 w-full">
           {/* Agent Salary Table */}
           <div className="w-full max-w-md mx-auto">
@@ -66,6 +71,9 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+          
+          {/* Contact section for mobile view */}
+          <ContactTeacherSection className="block md:hidden" />
         </div>
 
       </div>
