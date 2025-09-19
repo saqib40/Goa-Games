@@ -1,3 +1,5 @@
+import myImage from "../assets/ok.png";
+
 const AboutUs = () => (
   <section className="py-16 bg-white">
     <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
@@ -11,8 +13,7 @@ const AboutUs = () => (
         </p>
       </div>
       <div className="md:w-1/2 flex justify-center">
-          {/* I've replaced the generic shield icon with your image here. */}
-          <img src="ok.png" alt="Goa Games Illustration" className="max-w-xs md:max-w-sm rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105" />
+          <img src={myImage} alt="Goa Games Illustration" className="max-w-xs md:max-w-sm rounded-2xl shadow-xl transform transition-transform duration-300 hover:scale-105" />
       </div>
     </div>
   </section>
