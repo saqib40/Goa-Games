@@ -9,7 +9,7 @@ import TopGames from "./components/TopGames";
 
 export default function App() {
   return (
-    <div className="bg-white font-sans">
+    <div className="bg-slate-900 text-slate-100 font-sans min-h-screen">
       <Header />
       <main>
         <Hero />
